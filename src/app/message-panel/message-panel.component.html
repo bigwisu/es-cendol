@@ -1,0 +1,7 @@
+<section class="message-panel-container">
+    @for (message of messages; track message.id) {
+        <li>{{ message.content }}</li>
+    } @empty {
+        No messages
+    }
+</section>
