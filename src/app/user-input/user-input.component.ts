@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+const ENTER_KEY_ASCII_CODE = 13;
+
 @Component({
   selector: 'app-user-input',
   standalone: true,
@@ -21,5 +23,12 @@ export class UserInputComponent {
 
   sendMessage() {
     this.sendMessageEmitter.emit(this.message);
+  }
+
+  onKeyUp(event: any) {
+    if (event.keyCode === ENTER_KEY_ASCII_CODE) {
+      this.sendMessage();
+      this.message = '';
+    }
   }
 }

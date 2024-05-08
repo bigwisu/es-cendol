@@ -1,7 +1,10 @@
 <section class="message-panel-container">
     @for (message of messages; track message.id) {
-        <li>{{ message.content }}</li>
+        <div class="message-container">
+            <div class="avatar"></div>
+            <div class="message">{{ message.content }}</div>
+        </div>
     } @empty {
-        No messages
+        <div class="no-messages-container">No messages</div>
     }
 </section>
