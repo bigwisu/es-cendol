@@ -1,45 +1,51 @@
 .user-input-container {
-    display: flex;
-    align-items: center;
     height: 50px;
     padding: 10px;
     background-color: #87CEEB;
-    justify-content: space-between;;
 
-    .user-input-textfield {
-        height: 40px;
-        outline: 0;
-        border: none;
-        width: 95%;
-        border-radius: 8px;
-        padding: 2px 5px 2px 5px;
-        font-family: "Roboto";
-    }
-
-    .user-input-textfield::placeholder {
-        font-family: "Roboto";
-    }
-
-    .user-input-button {
+    .inner-containter{
         display: flex;
-        align-items: center;
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
-        color: white;
-        background-color: #FF7F50;
-        margin-left: 10px;
-        border: none;
-        outline: 0;
-        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        max-width: 800px;
 
-        span {
-            margin-left: 5px;
+        .user-input-textfield {
+            height: 40px;
+            outline: 0;
+            border: none;
+            width: 95%;
+            border-radius: 8px;
+            padding: 2px 5px 2px 5px;
+            font-family: "Roboto";
         }
-    }
 
-    .user-input-button:hover {
-        background-color: #e27e04;
+        .user-input-textfield::placeholder {
+            font-family: "Roboto";
+        }
+
+        .user-input-button {
+            display: flex;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            color: white;
+            background-color: #FF7F50;
+            margin-left: 10px;
+            border: none;
+            outline: 0;
+            cursor: pointer;
+
+            span {
+                margin-left: 5px;
+            }
+        }
+
+        .user-input-button:hover {
+            background-color: #e27e04;
+        }
+
     }
 
 }

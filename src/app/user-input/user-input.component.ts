@@ -23,12 +23,12 @@ export class UserInputComponent {
 
   sendMessage() {
     this.sendMessageEmitter.emit(this.message);
+    this.message = '';
   }
 
   onKeyUp(event: any) {
     if (event.keyCode === ENTER_KEY_ASCII_CODE) {
       this.sendMessage();
-      this.message = '';
     }
   }
 }

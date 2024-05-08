@@ -1,8 +1,10 @@
 <section class="user-input-container">
-    <input class="user-input-textfield" [(ngModel)]="message" placeholder="Enter message..." type="text" (keyup)="onKeyUp($event)">
-    <button class="user-input-button" (click)="sendMessage()">
-        <span class="material-symbols-outlined">
-            send
-        </span>
-    </button>
+    <div class="inner-containter">
+        <input class="user-input-textfield" [(ngModel)]="message" placeholder="Enter message..." type="text" (keyup)="onKeyUp($event)">
+        <button class="user-input-button" (click)="sendMessage()">
+            <span class="material-symbols-outlined">
+                send
+            </span>
+        </button>
+    </div>
 </section>

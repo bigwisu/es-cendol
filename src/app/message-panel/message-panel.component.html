@@ -1,10 +1,17 @@
 <section class="message-panel-container">
-    @for (message of messages; track message.id) {
-        <div class="message-container">
-            <div class="avatar"></div>
-            <div class="message">{{ message.content }}</div>
-        </div>
-    } @empty {
-        <div class="no-messages-container">No messages</div>
-    }
+    <div class="inner-containter">
+        @for (message of messages; track message.id) {
+            @if (message.sender === "user") {
+                <div class="message-user-container">
+                    <div class="message">{{ message.content }}</div>
+                </div>
+            } @else {
+                <div class="message-agent-container">
+                    <div class="message">{{ message.content }}</div>
+                </div>
+            }
+        } @empty {
+            <div class="no-messages-container">No messages</div>
+        }
+    </div>
 </section>

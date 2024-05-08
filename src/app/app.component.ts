@@ -27,7 +27,7 @@ export class AppComponent {
 
     let messageObject: Message = {
       id: uuidv4(),
-      sender: "user",
+      sender: "agent",
       content: $event,
       dateTime: new Date()
     }
