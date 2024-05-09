@@ -17,13 +17,13 @@ const ENTER_KEY_ASCII_CODE = 13;
 export class UserInputComponent {
 
   @Output() sendMessageEmitter = new EventEmitter();
-
   message: string = '';
 
-
   sendMessage() {
-    this.sendMessageEmitter.emit(this.message);
-    this.message = '';
+    if (this.message.length > 0) {
+      this.sendMessageEmitter.emit(this.message);
+      this.message = '';
+    }
   }
 
   onKeyUp(event: any) {

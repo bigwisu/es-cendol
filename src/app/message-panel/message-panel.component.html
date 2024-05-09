@@ -1,5 +1,5 @@
-<section class="message-panel-container">
-    <div class="inner-containter">
+<section #scrollPanel class="message-panel-container">
+    <div class="inner-container">
         @for (message of messages; track message.id) {
             @if (message.sender === "user") {
                 <div class="message-user-container">

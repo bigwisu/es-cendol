@@ -4,3 +4,8 @@ export interface Message {
     content: string;
     dateTime: Date
 }
+
+export enum MESSAGE_TYPE {
+    USER = "user",
+    ASSISTANT = "agent"
+}
