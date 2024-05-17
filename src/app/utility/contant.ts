@@ -7,5 +7,5 @@ export interface Message {
 
 export enum MESSAGE_TYPE {
     USER = "user",
-    ASSISTANT = "agent"
+    AGENT = "agent"
 }
