@@ -1,8 +1,8 @@
-.message-panel-container {
+.message-container {
     padding: 12px;
     font-family: "Roboto";
     font-weight: 300;
-    max-height: 83dvh;
+    height: calc(100dvh - 155px);
     overflow: auto;
     
     .inner-container{
