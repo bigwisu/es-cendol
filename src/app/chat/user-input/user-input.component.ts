@@ -1,16 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 const ENTER_KEY_ASCII_CODE = 13;
 
 @Component({
-  selector: 'app-user-input',
-  standalone: true,
-  imports: [
-    CommonModule, 
-    FormsModule
-  ],
+  selector: 'chat-user-input',
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.scss'
 })
@@ -31,4 +24,5 @@ export class UserInputComponent {
       this.sendMessage();
     }
   }
+  
 }

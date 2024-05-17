@@ -1,15 +1,12 @@
 import { Component, ElementRef, Input, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Message } from '../utility/contant';
+import { Message } from '../../utility/constants';
 
 @Component({
-  selector: 'app-message-panel',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './message-panel.component.html',
-  styleUrl: './message-panel.component.scss'
+  selector: 'chat-message',
+  templateUrl: './message.component.html',
+  styleUrl: './message.component.scss'
 })
-export class MessagePanelComponent {
+export class MessageComponent {
   @ViewChild('scrollPanel', { static: true })
     scrollPanel!: ElementRef;
   
@@ -46,5 +43,4 @@ export class MessagePanelComponent {
       });
     }
   }
-
 }

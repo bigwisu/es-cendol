@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserInputComponent } from './user-input.component';
+import { PanelComponent } from './panel.component';
 
-describe('UserInputComponent', () => {
-  let component: UserInputComponent;
-  let fixture: ComponentFixture<UserInputComponent>;
+describe('PanelComponent', () => {
+  let component: PanelComponent;
+  let fixture: ComponentFixture<PanelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserInputComponent]
+      declarations: [PanelComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(UserInputComponent);
+    fixture = TestBed.createComponent(PanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
